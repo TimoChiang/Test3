@@ -6,6 +6,21 @@ list:
       headers:
         contenttype: application/json; charset=UTF-8
       body: >
+         [
          {
-           "status": "OK"
+           "status": "OK?"
          }
+
+  - method: post
+    path: /abc/def
+    response:
+      status: 200
+      headers:
+        contenttype: application/json; charset=UTF-8
+      body: >
+        {
+          "result": {
+            "status": 200
+          }
+        }
+         ]
