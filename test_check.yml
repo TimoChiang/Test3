@@ -1,11 +1,26 @@
 list:
   - method: get
     path: /abc/def
-    response
+    response:
       status: 200
       headers:
                 contenttype: application/json; charset=UTF-8
       body: >
+         [
          {
            "status": "OK?"
          }
+         
+  - method: post
+    path: /abc/def
+    response:
+      status: 200
+      headers:
+                contenttype: application/json; charset=UTF-8
+      body: >
+        {
+          "result": {
+            "status": 200
+          }
+        }
+         ]
